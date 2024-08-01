@@ -1,0 +1,320 @@
+/* Start general Styling */
+::selection {
+    background-color: #f65129;
+    color: #ffd74f
+}
+
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sarabun", serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Hero Start */
+#Contact_Hero {
+    min-height: 40dvh;
+    background-image: url(./images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -10;
+}
+
+.Hero_BG {
+    position: absolute;
+    min-height: 40dvh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.578);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero_BG h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Hero End */
+/* First_Section Start*/
+.First_Section {
+    padding: 3rem 1rem;
+}
+
+.contact_div {
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.yellow_div {
+    width: 100%;
+    background-color: #ffd74f;
+    border-radius: 20px;
+    padding: 20px 15px;
+    min-height: 350px;
+    border-top: 25px solid #f65129;
+}
+
+.gray_div {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 0 15px;
+    min-height: 350px;
+    padding: 20px 15px;
+}
+
+.yellow_div_title {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.icone_paragaph {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.icone_paragaph i {
+    color: #f65129;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.Map {
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+/* First_Section End*/
+
+/* Form Style */
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form_row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    padding: 15px 0;
+    gap: 15px;
+}
+
+.form_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid gainsboro;
+}
+
+.form_item_massage {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid gainsboro;
+}
+
+textarea {
+    width: 70%;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.label {
+    width: 30%;
+}
+
+#First_name,
+#Last_name {
+    border: none;
+    width: 70%;
+    padding: 10px 5px;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+#Email {
+    border: none;
+    width: 90%;
+    padding: 10px 5px;
+}
+
+#send {
+    width: 30%;
+    background-color: #f65129;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 550px) {
+
+    /* Hero */
+    #Contact_Hero {
+        min-height: 55dvh;
+        position: relative;
+        z-index: -10;
+    }
+
+    .Hero_BG {
+        position: absolute;
+        min-height: 55dvh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.578);
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .Hero_BG h1 {
+        color: white;
+        font-size: 35px;
+        font-weight: 700;
+        padding-top: 5rem;
+    }
+
+    /* First_Section Start*/
+    .First_Section {
+        padding: 4rem 0;
+    }
+
+    .contact_div {
+        width: 100%;
+        padding: 35px 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .yellow_div {
+        width: 50%;
+        min-height: 500px;
+    }
+
+    .gray_div {
+        width: 50%;
+        min-height: 500px;
+        padding: 35px 20px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .yellow_div_title {
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+        padding: 8px 0;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .Map {
+        border-radius: 20px;
+        width: 100%;
+
+    }
+
+    /* First_Section End*/
+    /* Form Style */
+    form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .form_row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .form_item {
+        margin-bottom: 15px;
+    }
+
+    textarea {
+        width: 85%;
+        border: none;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 350px;
+    }
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moso Interior</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="header">
+      <nav class="navbar container">
+        <div class="Logo">
+          <h1>
+            Moso <span id="first_section_logo">Inter</span
+            ><span id="second_section_logo">ior</span>
+          </h1>
+        </div>
+
+        <div class="navItems">
+          <!-- Mobil Nav start -->
+          <ul class="Mobil_Links_List" id="mobil_nav">
+            <a href="#">
+              <li class="Active">Home</li>
+            </a>
+            <a href="./About.html">
+              <li>About</li>
+            </a>
+            <a href="./Gallery.html">
+              <li>Gallery</li>
+            </a>
+            <a href="./Contact.html">
+              <li>Contac Us</li>
+            </a>
+            <a href="./Login.html">
+              <li>Sign In</li>
+            </a>
+          </ul>
+          <!-- Mobil Nav end -->
+          <ul class="Links_List">
+            <a href="#">
+              <li class="Active">Home</li>
+            </a>
+            <a href="./About.html">
+              <li>About</li>
+            </a>
+            <a href="./Gallery.html">
+              <li>Gallery</li>
+            </a>
+            <a href="./Contact.html">
+              <li>Contac Us</li>
+            </a>
+            <a href="./Login.html">
+              <li>Sign In</li>
+            </a>
+          </ul>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon" id="menu">&#9776;</label>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- Hero Section Start -->
+    <section class="Hero">
+      <div class="container Hero_content">
+        <div class="Hero_first_sec">
+          <h1 class="Hero_small_title">Welcome to Moso Interior</h1>
+          <i class="ri-home-4-line"></i>
+        </div>
+        <h2>
+          Decorate a beautiful interior <br />
+          for your space
+        </h2>
+        <div class="serch_div">
+          <form>
+            <div class="div_input">
+              <label for="text">Prodact</label>
+              <input type="text" id="text" placeholder="Bathroom Living Room" />
+            </div>
+            <div class="div_input">
+              <label for="select">Price</label>
+              <select name="select" id="select">
+                <option value="500$ to 990$">500$ to 990$</option>
+                <option value="1000$ to 2900$">1000$ to 2900$</option>
+                <option value="3000$ to 5000$">3000$ to 5000$</option>
+                <option value="5000$ to 10.000$">5000$ to 10.000$</option>
+              </select>
+            </div>
+            <input type="submit" value="Search" id="search" />
+          </form>
+        </div>
+        <a href="#About" class="circle">
+          <i class="ri-arrow-up-line"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="About" class="container">
+      <div class="About_text_div">
+        <h3 class="green_title">Our Story</h3>
+        <h4>Introducing <span>Moso</span></h4>
+        <p class="About_heading">
+          Since 1986, We crafted interior products for better spaces
+        </p>
+        <p class="About_Text">
+          Moso Interior is a free Bootstrap 5 HTML CSS template for your
+          website. Tooplate is one of the best websites to download 100% free
+          HTML Templates for web designers and developers around the world.
+          Thank you for visiting.
+        </p>
+      </div>
+      <div class="About_images_div">
+        <div>
+          <img
+            id="family_image"
+            src="./images/family.jpg"
+            alt="family"
+            class="About_image"
+          />
+        </div>
+        <div>
+          <img
+            id="room_image"
+            src="./images/living-room.jpg"
+            alt="family"
+            class="About_image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Oppening hours Section -->
+    <section id="Oppening">
+      <div class="container">
+        <div class="oppen_div">
+          <h2 class="oppen_title">Opening Hours</h2>
+          <div class="time">
+            <i class="ri-time-line"></i>
+            <p class="Days">Mon - Friday ~</p>
+            <p class="Hours">8:00 AM - 6:00 PM</p>
+          </div>
+          <div class="time">
+            <i class="ri-time-line"></i>
+            <p class="Days">Saturday ~</p>
+            <p class="Hours">10:00 AM - 10:00 PM</p>
+          </div>
+          <div class="time width-50">
+            <i class="ri-time-line"></i>
+            <span class="Days">Sunday ~ Closed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Oppening hours Section -->
+
+    <!-- Products Siction -->
+    <section class="container products_section">
+      <h3 class="green_title">Moso Design Shop</h3>
+      <h4 class="prodact_subTitle">Interior <span>Products</span></h4>
+      <div class="products_div">
+        <!-- card -->
+        <div class="prodact_card">
+          <div class="prodact_image_div">
+            <img
+              src="./images/bathroom.jpg"
+              alt="bathroom"
+              class="prodact_image"
+            />
+            <div class="product_icons">
+              <i class="ri-heart-line"></i>
+              <i class="ri-save-line"></i>
+            </div>
+          </div>
+          <div class="prodact_title">
+            <h3>Bathroom</h3>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="prodact_card">
+          <div class="prodact_image_div">
+            <img src="./images/dining.jpg" alt="dining" class="prodact_image" />
+            <div class="product_icons">
+              <i class="ri-heart-line"></i>
+              <i class="ri-save-line"></i>
+            </div>
+          </div>
+          <div class="prodact_title">
+            <h3>Dining</h3>
+          </div>
+        </div>
+      </div>
+      <div class="products_div_2">
+        <div class="prodact_card">
+          <div class="prodact_image_div">
+            <img
+              src="./images/living-room2.jpg"
+              alt="living-room"
+              class="prodact_image"
+            />
+            <div class="product_icons">
+              <i class="ri-heart-line"></i>
+              <i class="ri-save-line"></i>
+            </div>
+          </div>
+
+          <h3 class="prodact_title">Living Room</h3>
+        </div>
+        <!-- card -->
+        <div class="prodact_card">
+          <div class="prodact_image_div">
+            <img
+              src="./images/concept-home-cooking-with-female-chef.jpg"
+              alt="Chef Kitchen"
+              class="prodact_image"
+            />
+            <div class="product_icons">
+              <i class="ri-heart-line"></i>
+              <i class="ri-save-line"></i>
+            </div>
+          </div>
+          <div class="prodact_title">
+            <h3>Chef Kitchen</h3>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="prodact_card">
+          <div class="prodact_image_div">
+            <img
+              src="./images/childrens-room.jpg"
+              alt="childrens-room"
+              class="prodact_image"
+            />
+            <div class="product_icons">
+              <i class="ri-heart-line"></i>
+              <i class="ri-save-line"></i>
+            </div>
+          </div>
+          <div class="prodact_title">
+            <h3>Childrens Bedroom</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Siction -->
+    <!-- Reviews section -->
+    <section id="Reviews">
+      <div class="container">
+        <h3 class="green_title">Happy customers.</h3>
+        <h4 class="prodact_subTitle"><span>Reviews</span></h4>
+        <div class="review_div">
+          <div class="review_card">
+            <h4 class="review_card_title">
+              Please recommend Tooplate website to your friends.
+            </h4>
+            <div class="orang_div">
+              <img
+                src="./images/young-woman.jpg"
+                alt="profile image"
+                class="profile_image"
+              />
+              <h5 class="profile_title">Helen</h5>
+              <div class="starts_div">
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line stars"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review_card">
+            <h4 class="review_card_title">
+              Explore more HTML Templates to download for your website.
+            </h4>
+            <div class="orang_div">
+              <img
+                src="./images/man-with-heavy-beard.jpg"
+                alt="profile image"
+                class="profile_image"
+              />
+              <h5 class="profile_title">Jack</h5>
+              <div class="starts_div">
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review_card">
+            <h4 class="review_card_title">
+              This Bootstrap 5 layout is free to use for your website.
+            </h4>
+            <div class="orang_div">
+              <img
+                src="./images/young-redhead.jpg"
+                alt="profile image"
+                class="profile_image"
+              />
+              <h5 class="profile_title">Bill</h5>
+              <div class="starts_div">
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line stars"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews section -->
+    <!-- Footer start -->
+
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#36363e"
+          fill-opacity="1"
+          d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,149.3C560,139,640,149,720,176C800,203,880,245,960,250.7C1040,256,1120,224,1200,229.3C1280,235,1360,277,1400,298.7L1440,320L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="fotter_div container">
+        <div class="col">
+          <h4>Moso Interior</h4>
+          <p>Since 1986, We crafted interior products for better spaces</p>
+        </div>
+        <div class="col">
+          <h4>Store</h4>
+          <div class="div_icon">
+            <i class="ri-map-pin-line"></i>
+            <p>Berlin, Germany</p>
+          </div>
+        </div>
+        <div class="col">
+          <h4>Contact Info</h4>
+          <div class="div_icon">
+            <i class="ri-phone-line"></i>
+            <p>090-080-0760</p>
+          </div>
+          <div class="div_icon">
+            <i class="ri-mail-line"></i>
+            <p>info@company.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer start -->
+    <script>
+      const mune = document.getElementById("menu");
+      const list = document.getElementById("mobil_nav");
+      let isOpen = false;
+      mune.addEventListener("click", () => {
+        isOpen = !isOpen;
+        if (isOpen) {
+          list.classList.add("visibil");
+        } else {
+          list.classList.remove("visibil");
+        }
+      });
+    </script>
+  </body>
+</html>

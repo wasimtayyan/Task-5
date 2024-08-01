@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Moso Interior</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="header">
+      <nav class="navbar container">
+        <div class="Logo">
+          <h1>
+            Moso <span id="first_section_logo">Inter</span
+            ><span id="second_section_logo">ior</span>
+          </h1>
+        </div>
+
+        <div class="navItems">
+          <!-- Mobil Nav start -->
+          <ul class="Mobil_Links_List" id="mobil_nav">
+            <a href="./index.html">
+              <li>Home</li>
+            </a>
+            <a href="./About.html">
+              <li>About</li>
+            </a>
+            <a href="./Gallery.html">
+              <li>Gallery</li>
+            </a>
+            <a href="./Contact.html">
+              <li>Contac Us</li>
+            </a>
+            <a href="./Login.html">
+              <li class="Active">Sign In</li>
+            </a>
+          </ul>
+          <!-- Mobil Nav end -->
+          <ul class="Links_List">
+            <a href="./index.html">
+              <li>Home</li>
+            </a>
+            <a href="./About.html">
+              <li>About</li>
+            </a>
+            <a href="./Gallery.html">
+              <li>Gallery</li>
+            </a>
+            <a href="./Contact.html">
+              <li>Contac Us</li>
+            </a>
+            <a href="./Login.html">
+              <li class="Active">Sign In</li>
+            </a>
+          </ul>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon" id="menu">&#9776;</label>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- Hero start -->
+    <section id="Login_Hero">
+      <div class="Hero_BG">
+        <h1>Sign In</h1>
+      </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- main -->
+    <section class="container main_section">
+      <h3 class="green_title">Welcome Back</h3>
+      <h4 class="prodact_subTitle">Sign in <span>to your Account</span></h4>
+      <div class="login_div">
+        <div class="yellow_div">
+          <form action="./index.html">
+            <h4>Sign In</h4>
+            <div class="form_item">
+              <label for="email" class="lable">Emil</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form_item">
+              <label for="password" class="lable">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div>
+              <label for="remmber">Remmber Me</label>
+              <input type="checkbox" name="remmber" id="remmber" />
+            </div>
+            <input type="submit" value="Sign In" id="SignIn" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      const mune = document.getElementById("menu");
+      const list = document.getElementById("mobil_nav");
+      let isOpen = false;
+      mune.addEventListener("click", () => {
+        isOpen = !isOpen;
+        if (isOpen) {
+          list.classList.add("visibil");
+        } else {
+          list.classList.remove("visibil");
+        }
+      });
+    </script>
+  </body>
+</html>

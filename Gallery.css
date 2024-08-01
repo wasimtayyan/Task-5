@@ -1,0 +1,97 @@
+/* Start general Styling */
+::selection {
+    background-color: #f65129;
+    color: #ffd74f
+}
+
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sarabun", serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Hero Start */
+#Gallery_Hero {
+    min-height: 40dvh;
+    background-image: url(./images/i.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -10;
+}
+
+.Hero_BG {
+    position: absolute;
+    min-height: 40dvh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.578);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Hero_BG h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Hero End */
+
+.gallery {
+    padding: 3rem 1rem;
+}
+
+@media screen and (min-width: 550px) {
+
+    /* Hero */
+    #Gallery_Hero {
+        min-height: 55dvh;
+        position: relative;
+        z-index: -10;
+    }
+
+    .Hero_BG {
+        position: absolute;
+        min-height: 55dvh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.578);
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .Hero_BG h1 {
+        color: white;
+        font-size: 35px;
+        font-weight: 700;
+        padding-top: 5rem;
+    }
+
+
+    /* About section */
+    .gallery {
+        padding: 4rem 1rem;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 350px;
+    }
+}

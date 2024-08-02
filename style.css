@@ -598,6 +598,28 @@ footer {
 
 /* Footer */
 
+/* Animation */
+
+.prodact_card,
+.review_card,
+#room_image,
+#family_image {
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 50%;
+}
+
+@keyframes fade {
+    from {
+        scale: 0.8;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
 
 /* media for screens larger then mobile */
 
